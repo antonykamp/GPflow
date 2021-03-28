@@ -40,7 +40,7 @@ class Scipy:
         method: Optional[str] = "L-BFGS-B",
         step_callback: Optional[StepCallback] = None,
         compile: bool = True,
-        unconnected_gradients: str = tf.UnconnectedGradients.ZERO,
+        unconnected_gradients: str = tf.UnconnectedGradients.NONE,
         **scipy_kwargs,
     ) -> OptimizeResult:
         """
